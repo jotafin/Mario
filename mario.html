@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>It's Me</title>
+
+	<style type="text/css">
+		.w, .r, .b, .o, .y {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+            margin-top: -4px;
+		}
+		.r{
+			background-color: #FB0405;
+		}
+        .b{
+			background-color: #7D5307;
+		}
+        .o{
+			background-color: #FF9F10;
+		}
+        .y{
+			background-color: #F6A412;
+		}
+	</style>
+
+
+</head>
+<body>
+
+		<div id="whois">
+            wwwrrrrrwwwwj
+            wwrrrrrrrrrwj
+            wwbbboobowwwj
+            wbobooobooowj
+            wbobboooboooj
+            wbboooobbbbwj
+            wwwoooooowwwj
+            wwbbrbbbwwwwj
+            wbbbrbbrbbbwj
+            bbbbrrrrbbbbj
+            oobryrryrbooj
+            ooorrrrrroooj
+            oorrrrrrrrooj
+            wwrrrwwrrrwwj
+            wbbbwwwwbbbwj
+            bbbbwwwwbbbbj
+            
+		</div>
+        <h1>It's Me</h1>
+
+		<script type="text/javascript">
+			
+			let whois = document.getElementById("whois");
+			let str = whois.innerHTML;
+			str = str.replace(/w/g, "<div class='w'></div>");
+			str = str.replace(/r/g, "<div class='r'></div>");
+            str = str.replace(/b/g, "<div class='b'></div>");
+            str = str.replace(/o/g, "<div class='o'></div>");
+            str = str.replace(/y/g, "<div class='y'></div>");
+			str = str.replace(/j/g, "<br>");
+			whois.innerHTML = str;
+
+		</script>
+
+
+</body>
+</html>
